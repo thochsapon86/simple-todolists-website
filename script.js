@@ -5,9 +5,7 @@ function addTaskList() {
     if ( inputTask != "") {
         console.log(inputTask)
         const listItem = document.createElement("li");
-        listItem.innerHTML = `<input type='checkbox'> ${inputTask}<button>remove</button>
-        `;
- 
+        listItem.innerHTML = `<input type='checkbox'> ${inputTask}<button>remove</button>`;
         const deleteButton = listItem.querySelector("button");
         deleteButton.addEventListener("click", function () {
             listItem.remove();
@@ -15,7 +13,10 @@ function addTaskList() {
 
         todoList.appendChild(listItem);
 
-    document.getElementById("inputTask").value = ""
-
+        document.getElementById("inputTask").value = ""
     } 
+    else {
+        alert("Please Enter Task!")
+        document.getElementById("inputTask").value = ""
+    }
 }
