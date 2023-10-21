@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #2B2A4C;
+}
+
+body {
+    height: 90vh;
+}
+
+header {
+    text-align: center;
+    margin: 3% auto;
+    width: 100%;
+    max-width: 55vw;
+}
+
+header h3 {
+    font-size: 18px;
+    color: gray;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container {
+    margin: 5% auto;
+    width: 100%;
+    height: auto;
+    max-width: 45vw;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow:     #EEE2DE 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #EEE2DE; */
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+.input-box input {
+    width: 100%;
+    max-width: 15vw;
+    height: 6vh;
+    border: none;
+    box-shadow: #d5e9ff 0px 8px 24px;
+    border-radius: 99px 0 0 99px;
+    padding: 0.8rem 1.25rem;
+    font-size: 16px;
+}
+
+.input-box input:focus {
+    max-width: 20vw;
+    transition: 0.2s;
+    outline: 0.25px solid #007bff;
+}
+
+.input-box button {
+    border-radius: 0 99px 99px 0;
+    padding: 0.6rem;
+    height: 6vh;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    max-width: 100px;
+    background-color: #007bff;
+    color: aliceblue;
+    box-shadow: #d5e9ff 0px 8px 24px;
+    transition: 0.3s;
+}
+
+.input-box button:hover {
+    cursor: pointer;
+}
+
+.input-box button:active {
+    transition: 0.3s;
+    filter: brightness(80%);
+}
+
+.divider {
+    padding: 2%;
+    border-bottom: 1px solid #b7b7b7;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.todo-list {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 55vw;
+    height: auto;
+}
+
+.list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.list li{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    max-width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2% auto;
+}
+
+.list .divider {
+    padding: 0;
+}
+
+.list input[type='checkbox'] {
+    
+}
+
+.list button {
+    justify-self: end;
+    border-radius: 99px;
+    padding: 0.6rem;
+    height: 4vh;
+    border: none;
+    width: 100%;
+    max-width: 80px;
+    font-weight: bold;
+    background-color: #dc3545;
+    color: aliceblue;
+    box-shadow: #d5e9ff 0px 8px 24px;
+    transition: 0.3s;
+}
+
+.list button:hover {
+    cursor: pointer;
+}
+
+.list button:active {
+    transition: 0.3s;
+    filter: brightness(80%);
+}
+
