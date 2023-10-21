@@ -1,18 +1,21 @@
 function addTaskList() {
     let inputTask = document.getElementById("inputTask").value
     let todoList = document.getElementById("todo-list")
-    console.log(inputTask)
-    todoList.innerHTML +=
-    "<li id='list'>" + "<input type='checkbox'></input>" + inputTask + 
-    "<button id='removeBtn' onclick='remove()'>remove</button>" +
-    "</li>" +
-    "<div class='divider'></div>"
 
-}
+    if ( inputTask != "") {
+        console.log(inputTask)
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<input type='checkbox'> ${inputTask}<button>remove</button>
+        `;
+ 
+        const deleteButton = listItem.querySelector("button");
+        deleteButton.addEventListener("click", function () {
+            listItem.remove();
+        });
 
-function remove() {
-    let todoList = document.getElementById("todo-list")
-    let removeBtn = getElementById("removeBtn")
-    list.innerHTML = ""
-    removeBtn.innerHTML = ""
+        todoList.appendChild(listItem);
+
+    document.getElementById("inputTask").value = ""
+
+    } 
 }

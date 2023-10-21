@@ -8,6 +8,7 @@
 
 body {
     height: 90vh;
+    background-color: #007bff;
 }
 
 header {
@@ -15,6 +16,10 @@ header {
     margin: 3% auto;
     width: 100%;
     max-width: 55vw;
+}
+
+header h1 {
+    
 }
 
 header h3 {
@@ -29,12 +34,14 @@ header h3 {
     width: 100%;
     height: auto;
     max-width: 45vw;
+    min-width: 600px;
     padding: 1rem;
     border-radius: 20px;
     box-shadow:     #EEE2DE 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #fff;
     /* background-color: #EEE2DE; */
 }
 
@@ -116,6 +123,8 @@ header h3 {
     align-items: center;
     justify-content: space-between;
     margin: 1.2% auto;
+    padding-bottom: 1.5%;
+    border-bottom: 1px solid #b7b7b7;
 }
 
 .list .divider {
@@ -123,8 +132,16 @@ header h3 {
 }
 
 .list input[type='checkbox'] {
-    
+    height: 20px;
+    width: 100%;
+    max-width: 20px;
 }
+
+.list input[type='checkbox']:hover {
+    cursor: pointer;
+}
+
+
 
 .list button {
     justify-self: end;
